@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./output.css">
+  <title>Responsive</title>
+</head>
+<!--grow es para decirle a los div si tienen espacio disponible que crezcan y si no que se contraigan
+shrink-0 es para decirle que si llega al tamaño minimo que mantengan su tamaño pero que hagan zoom para hacerse mas pequeños 
+basis-1/4 significa que ocupara ese espacio de la pantalla-->
+
+<body class="p-4 dark:bg-slate-900">
+  <div class="grid grid-cols-4 gap-4">
+    <div class="card col-span-2">1</div>
+    <div class="card ">2</div>
+    <div class="card ">3</div>
+    <div class="card row-span-2">4</div>
+    <div class="card col-span-2 ">5</div>
+    <div class="card ">6</div>
+    <div class="card col-start-2 col-end-4">7</div>
+    <div class="card ">8</div>
+    <div class="card ">9</div>
+  </div>
+
+  <div class="grid grid-cols-2 pt-4 gap-4 h-[100vp]">
+    <div class="card col-span-2">Header</div>
+    <div class="card col-span-2">nav</div>
+    <div class="card">section</div>
+    <div class="card row-[3/5] col-start-2">article</div>
+    <div class="card">aside</div>
+    <div class="card col-span-2">footer</div>
+  </div>
+  <article class="w-[400px] mt-10 border-2 rounded-xl p-3 mx-auto dark:text-white">
+    <p
+      class="first-line:uppercase first-line:tracking-wide first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left px-2 py-2 ">
+      The wordl It is a long established fact that a reader will be distracted by the readable content of a page when
+      looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+      letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop
+      publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem
+      ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes
+      by accident, sometimes on purpose (injected humour and the like).
+    </p>
+  </article>
+  <label class="dark:text-white">Dark Mode</label>
+  <input type="checkbox" id="darkmode">
+  <script src="./main.js"></script>
+</body>
+
+</html>

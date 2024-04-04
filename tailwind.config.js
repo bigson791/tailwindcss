@@ -1,8 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      
       //aca se modifican los colores especificos de
       colors:{
         'azul-claro':'#243cff',

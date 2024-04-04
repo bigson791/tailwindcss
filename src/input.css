@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+  .card{
+    @apply
+      bg-red-500/95 grid
+      place-content-center rounded-xl text-white
+      font-bold border-2 border-red-700 text-5xl
+    
+  }
+}
